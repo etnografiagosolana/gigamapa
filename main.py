@@ -42,7 +42,7 @@ def generate_tiles_and_xml(image_path, tile_size=256, output_dir='tiles'):
     # Crear el árbol XML y guardarlo
     tree = ET.ElementTree(image_properties)
     xml_output_path = os.path.join(output_dir, 'ImageProperties.xml')
-    tree.write(xml_output_path)
+    tree.write ('ImageProperties.xml') #(xml_output_path)
 
     print(f"Generados {num_tiles} tiles en el directorio '{output_dir}'")
     print(f"Archivo ImageProperties.xml guardado en '{xml_output_path}'")
